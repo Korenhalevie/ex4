@@ -10,12 +10,16 @@
 
 <body>
     <section>
-        Welcome
-        <?php
+        <div id="current_date">
+            </p>
+            Welcome
+            <?php
+            echo "<br>" . "Today is " . date('Y-m-d') . " Time is " . date('H:i:s') . "<br>";
+            
     $un = $_GET["reg_un"];
     $pw = $_GET["reg_pass"];
     $pn = $_GET["reg_pn"];
-
+    
     if($un == "koren" && $pw =="123" && $pn == "ray" ){
         echo  nl2br ("<h2> Login successfully
          Welcome " . $un . " nice to see you" . "</h2>");
