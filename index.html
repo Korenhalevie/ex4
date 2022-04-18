@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <title>Koren Halevie - ex4</title>
+</head>
+
+<body class="index">
+    <div class="h1-form">
+        <h1>Let's join the Club!</h1>
+        <form action="http://se.shenkar.ac.il/teach/web1/get_form3.php" method="get">
+
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Full Name:
+            <input
+              placeholder="Full Name"
+              class="form-control"
+              type="text"
+              name="fullName"
+              pattern="(?=^.{0,40}$)^[a-zA-Z-]+\s[a-zA-Z-]+$"
+            />
+          </label>
+
+                <label class="form-label">Password:
+            <input
+              placeholder="a to z 5-10 chars"
+              class="form-control"
+              type="password"
+              pattern="[a-z]{5,10}"
+              name="pass"
+            />
+          </label>
+            </div>
+
+            <div>
+                <label class="others" for="exampleFormControlInput1">Email address:
+            <input
+              type="email"
+              name="mail"
+              class="form-control"
+              placeholder="name@example.com"
+            />
+          </label>
+
+                <label class="others">Website:
+            <input type="url" name="website" class="form-control" />
+          </label>
+
+                <label class="others">Phone:
+            <input
+              placeholder="9-10 chars"
+              type="tel"
+              pattern="[0-9]{9,10}"
+              name="phone"
+              class="form-control"
+            />
+          </label>
+
+                <label class="others">Coffee:
+            <input type="number" name="coffee" class="form-control" />
+          </label>
+            </div>
+
+            <label class="others" for="formControlRange">Temperature:
+          <input type="range" name="temper" class="form-control-range" />
+        </label>
+
+            <label class="others">Address:
+          <textarea type="range" name="address" class="form-control"></textarea>
+        </label>
+
+            <div class="checkbox-group required form-check">
+                Interests:
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="diving" />
+                    <label class="form-check-label" for="flexCheckChecked">
+              Diving
+            </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="photography" />
+                    <label class="form-check-label" for="flexCheckChecked">
+              Photography
+            </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="coding" />
+                    <label class="form-check-label" for="flexCheckChecked">
+              Coding
+            </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="interests[]" value="annoy-people" />
+                    <label class="form-check-label" for="flexCheckChecked">
+              Annoy-people
+            </label>
+                </div>
+            </div>
+
+            <span>Gender:</span>
+            <label> <input type="radio" name="gender" value="male" /> Male</label>
+            <label><input type="radio" name="gender" value="female"
+        /> Female </label>
+            <label for="exampleFormControlSelect2">Age:
+          <select
+            name="age"
+            class="form-control"
+            id="exampleFormControlSelect1"
+          >
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27" selected>27</option>
+            <option value="28">28</option>
+          </select></label
+        >
+        <input
+          type="submit"
+          value="Submit"
+          id="submit"
+          class="btn btn-primary mb-2"
+        />
+      </div>
+    </form>
+  </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
